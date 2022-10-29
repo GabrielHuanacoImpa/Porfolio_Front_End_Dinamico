@@ -1,9 +1,4 @@
-<p>experiencias works!</p>
-<p>experiencias works!</p>
-<p>experiencias works!</p>
-<p>experiencias works!</p>
 
-<div class="container">
 <section class="row row mt-100 border border-dark rounded align-items-center" style="height: auto">
     <article>
     <div class="container-fluid">
@@ -20,28 +15,31 @@
 
         <div class="collapse" id="collapseExample">
             <div class="card card-body">
-                <!--     -->   
+                <!--    
                 <h1> hola collapse</h1>
-                <!--     -->   
+                <h1> hola collapse</h1>
+                <h1> hola collapse</h1>
+                    -->   
+                <!--recibimos un evento-->
+                <!--
+                <app-add-experiencia
+                    (onAddTask)="addTask($event)" 
+                ></app-add-experiencia>
+                -->
+
+                <app-experiencias-item 
+                *ngFor="let experiencia of experiencias"
+                [experiencia] = "experiencia"
+                (onDeleteTask)="deleteTask(experiencia)"
+                (onToggleReminder)="toggleReminder(experiencia)"
+                >    
+                </app-experiencias-item> 
+
+
             </div> <!--fin card card-body-->
         </div> <!--fin collapse  -->
     </div> <!-- fin container-->
     </article>
 </section>
-</div>
 
-<!--recibimos un evento-->
-<!--
-<app-add-experiencia
-    (onAddTask)="addTask($event)" 
-></app-add-experiencia>
--->
-
-<app-experiencias-item 
-    *ngFor="let experiencia of experiencias"
-    [experiencia] = "experiencia"
-    (onDeleteTask)="deleteTask(experiencia)"
-    (onToggleReminder)="toggleReminder(experiencia)"
->    
-</app-experiencias-item>
 

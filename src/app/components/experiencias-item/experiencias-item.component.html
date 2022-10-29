@@ -5,30 +5,47 @@
     [ngClass]="{ reminder: experiencia.reminder }"
     (click)="onToggle(experiencia)"
 >
-    <h3>
-        {{experiencia.tipo}} 
-        <!--
-        <fa-icon 
-            [icon]="faTimes"
-            [ngStyle] = "{'color': 'red'}" 
-            (click)="onDelete(experiencia)" 
-        ></fa-icon>
-        -->
-        <!-- [ngStyle] esto es online se pudo haber hecho con una class -->
+    <div class= "row"> 
+        <div class="col-md-2">           
+            <img  class="images" src={{experiencia.image_logo}} >
+       </div>
+        
+        <div class="col-md-9">
+            <h5>
+                {{experiencia.id}} <br>
+                {{experiencia.tipo}} <br>
+                {{experiencia.tiempo}} <br>
+                {{experiencia.fecha_experiencia}} <br>
+                {{experiencia.Lugar}} <br><br>
+            </h5>
+            <h6>
+                {{experiencia.fecha_ultima_actualizacion}} 
+            </h6>
+            
+        </div>
+        <div class="col-md-1">
+            <h5>
+                <div class= "row"> 
+                    <div class="col-md-5">
+                        <fa-icon 
+                        [icon]="faPencil"
+                        [ngStyle] = "{'color': 'green'}" 
+                        (click)="onDelete(experiencia)" 
+                        ></fa-icon>
+                    </div>
 
-        <fa-icon 
-        [icon]="faPencil"
-        [ngStyle] = "{'color': 'green'}" 
-        (click)="onDelete(experiencia)" 
-        ></fa-icon>
+                    <div class="col-md-7">
+                        <fa-icon 
+                        [icon]="faTrashCan"
+                        [ngStyle] = "{'color': 'green'}" 
+                        (click)="onDelete(experiencia)" 
+                        ></fa-icon>
+                    </div>
+                </div>
+            </h5> 
+        </div>
 
-        <fa-icon 
-        [icon]="faTrashCan"
-        [ngStyle] = "{'color': 'green'}" 
-        (click)="onDelete(experiencia)" 
-        ></fa-icon>
-    </h3>
-    <h3>
-        {{experiencia.tiempo}}
-    </h3>
+    </div>
+
+
 </div>
