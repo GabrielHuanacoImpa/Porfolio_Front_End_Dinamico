@@ -17,6 +17,13 @@ import { SectionComponent } from './components/section/section.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ExperienciasComponent } from './components/experiencias/experiencias.component';
 import { ExperienciasItemComponent } from './components/experiencias-item/experiencias-item.component';
+import { HardSkillsComponent } from './components/hard-skills/hard-skills.component';
+import { HardSkillsItemComponent } from './components/hard-skills-item/hard-skills-item.component';
+import { EducacionesComponent } from './components/educaciones/educaciones.component';
+import { EducacionesItemComponent } from './components/educaciones-item/educaciones-item.component';
+
+
+
 
 
 const appRoutes: Routes = [
@@ -34,7 +41,11 @@ const appRoutes: Routes = [
     SectionComponent,
     FooterComponent,
     ExperienciasComponent,
-    ExperienciasItemComponent
+    ExperienciasItemComponent,
+    HardSkillsComponent,
+    HardSkillsItemComponent,
+    EducacionesComponent,
+    EducacionesItemComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +63,6 @@ const appRoutes: Routes = [
 
     */
    
-
 
   ],
   /* debemos permitir el modulo HttpClientModule 

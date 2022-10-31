@@ -3,7 +3,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import {Experiencia} from '../../Experiencia';
 import {EXPERIENCIAS} from '../../mock-experiencias';
 
-import { faTrashCan, faTrash, faTimes, faPen, faPencil } from '@fortawesome/free-solid-svg-icons';
+import { faTrashCan, faPencil } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-experiencias-item',
@@ -14,10 +14,9 @@ export class ExperienciasItemComponent implements OnInit {
   @Input() experiencia: Experiencia = EXPERIENCIAS[0];
   @Output() onDeleteExperiencia: EventEmitter<Experiencia> = new EventEmitter();
   @Output() onToggleReminder: EventEmitter<Experiencia> = new EventEmitter();
-  faTimes = faTimes;
-  faPen = faPen;
+
   faPencil = faPencil; 
-  faTrash = faTrash;
+  
   faTrashCan=faTrashCan;
 
   constructor() { }
