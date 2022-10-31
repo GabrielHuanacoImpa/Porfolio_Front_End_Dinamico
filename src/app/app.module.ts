@@ -23,6 +23,7 @@ import { EducacionesComponent } from './components/educaciones/educaciones.compo
 import { EducacionesItemComponent } from './components/educaciones-item/educaciones-item.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { ProyectosItemComponent } from './components/proyectos-item/proyectos-item.component';
+import { HardSoftSkillsComponent } from './components/hard-soft-skills/hard-soft-skills.component';
 
 
 
@@ -49,7 +50,8 @@ const appRoutes: Routes = [
     EducacionesComponent,
     EducacionesItemComponent,
     ProyectosComponent,
-    ProyectosItemComponent
+    ProyectosItemComponent,
+    HardSoftSkillsComponent
   ],
   imports: [
     BrowserModule,

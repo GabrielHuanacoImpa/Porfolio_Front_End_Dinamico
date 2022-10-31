@@ -1,1 +1,52 @@
-<p>hard-skills-item works!</p>
+
+<!-- Es nuestra tarjeta-->
+<div 
+    class="hardSkill"
+    [ngClass]="{ reminder: hardSkill.reminder }"
+    (click)="onToggle(hardSkill)"
+>
+    <div class= "row"> 
+        <div class="col-md-2">           
+            
+       </div>
+        
+        <div class="col-md-9">
+            <h5>
+                {{hardSkill.id}} <br>
+                {{hardSkill.habilidad}} <br>
+                {{hardSkill.nivel}} <br><br>
+
+            </h5>
+            <h6>
+
+            </h6>
+
+
+        </div>
+        <div class="col-md-1">
+            <h5>
+                <div class= "row"> 
+                    <div class="col-md-5">
+                        <fa-icon 
+                        [icon]="faPencil"
+                        [ngStyle] = "{'color': 'green'}" 
+                        (click)="onDelete(hardSkill)" 
+                        ></fa-icon>
+                    </div>
+
+                    <div class="col-md-7">
+                        <fa-icon 
+                        [icon]="faTrashCan"
+                        [ngStyle] = "{'color': 'green'}" 
+                        (click)="onDelete(hardSkill)" 
+                        ></fa-icon>
+                    </div>
+                </div>
+            </h5> 
+        </div>
+
+    </div>
+
+
+</div>
+

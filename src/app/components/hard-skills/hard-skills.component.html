@@ -1,43 +1,25 @@
-<p>hard-skills works!</p>
+
 <section class="row row mt-100 border border-dark rounded align-items-center" style="height: auto">
     <article>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-10"><h3>Hard & Soft Skills</h3></div>
-            <div class="col-md-2">  
-                <div class="d-grid gap-2 d-md-flex justify-content-md-end">                            
-                    <button class="btn btn-default" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        <img src="assets/icons8-plus-minus.png" width="30" /> 
-                    </button>
-                </div>
-            </div>
-        </div>
 
-        <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-                <!--    
-                <h1> hola collapse</h1>
-                <h1> hola collapse</h1>
-                <h1> hola collapse</h1>
-                    -->   
+  
                 <!--recibimos un evento-->
                 <!--
-                <app-add-experiencia
-                    (onAddTask)="addTask($event)" 
-                ></app-add-experiencia>
+                <app-add-hardSkill
+                    (onAddHardSkill)="addHardSkill($event)" 
+                ></app-add-hardSkill>
                 -->
-<!--  
-                <app-experiencias-item 
-                *ngFor="let experiencia of experiencias"
-                [experiencia] = "experiencia"
-                (onDeleteTask)="deleteTask(experiencia)"
-                (onToggleReminder)="toggleReminder(experiencia)"
+                <h4> Hard Skills </h4>
+                <app-hard-skills-item 
+                *ngFor="let hardSkill of hardSkills"
+                [hardSkill] = "hardSkill"
+                (onDeleteHardSkill)="deleteHardSkill(hardSkill)"
+                (onToggleReminder)="toggleReminder(hardSkill)"
                 >    
-                </app-experiencias-item> 
-            -->  
+                </app-hard-skills-item> 
+            
+                 
 
-            </div> <!--fin card card-body-->
-        </div> <!--fin collapse  -->
-    </div> <!-- fin container-->
+
     </article>
 </section>
