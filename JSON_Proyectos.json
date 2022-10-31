@@ -1,5 +1,5 @@
 {
-	"Proyectos": [
+	"proyectos": [
 		{
 			"id": "1",
 			"nombre_proyecto": "Construccion de Estructura de Hormigon Armado de viviendas",
@@ -10,7 +10,7 @@
             "id_domicilio":"San salvador de Jujuy, Jujuy, Argentina",
             "tipo_ocupacion":"Independiente- Jornada Parcial",
             "ultima_actualizacion": "Última actualización hace 3 minutos",			
-            "image_logo": "img/P-Armador.jpg"
+            "image_logo": "assets/P-Armador.jpg"
 			
 		},
         {
@@ -23,7 +23,7 @@
             "id_domicilio":"San salvador de Jujuy, Jujuy, Argentina",
             "tipo_ocupacion":"Independiente- Jornada Parcial",
             "ultima_actualizacion": "Última actualización hace 3 minutos",
-            "image_logo": "img/icons8-courier-64.png"
+            "image_logo": "assets/icons8-courier-64.png"
 			
 		},
         {
@@ -36,7 +36,7 @@
             "id_domicilio":"San salvador de Jujuy, Jujuy, Argentina",
             "tipo_ocupacion":"Independiente- Jornada Parcial",
             "ultima_actualizacion": "Última actualización hace 3 minutos",
-            "image_logo": "img/icons8-floor-plan-64.png"
+            "image_logo": "assets/icons8-floor-plan-64.png"
 			
 		},
         {
@@ -49,7 +49,7 @@
             "id_domicilio":"San salvador de Jujuy, Jujuy, Argentina",
             "ultima_actualizacion": "Última actualización hace 3 minutos",
             "tipo_ocupacion":"Independiente- Jornada Parcial",
-			"image_logo": "img/icons8-keyboard-and-mouse-64.png"
+			"image_logo": "assets/icons8-keyboard-and-mouse-64.png"
 			
 		},
         {
@@ -62,7 +62,7 @@
             "id_domicilio":"San salvador de Jujuy, Jujuy, Argentina",
             "ultima_actualizacion": "Última actualización hace 3 minutos",
             "tipo_ocupacion":"Independiente- Jornada Parcial",
-			"image_logo": "img/logo111MIL.png"
+			"image_logo": "assets/logo111MIL.png"
 			
 		},
         {
@@ -75,7 +75,7 @@
             "id_domicilio":"San salvador de Jujuy, Jujuy, Argentina",
             "ultima_actualizacion": "Última actualización hace 3 minutos",
             "tipo_ocupacion":"Independiente- Jornada Parcial",
-			"image_logo": "img/argprog_logo[1-Etapa].png"
+			"image_logo": "assets/argprog_logo[1-Etapa].png"
 			
 		},
         {
@@ -88,7 +88,7 @@
             "id_domicilio":"San salvador de Jujuy, Jujuy, Argentina",
             "ultima_actualizacion": "Última actualización hace 3 minutos",
             "tipo_ocupacion":"Independiente- Jornada Parcial",
-			"image_logo": "img/APLogo-20-20[2-Etapa].png"
+			"image_logo": "assets/APLogo-20-20[2-Etapa].png"
 			
 		}
 	]

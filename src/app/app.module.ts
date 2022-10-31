@@ -21,6 +21,8 @@ import { HardSkillsComponent } from './components/hard-skills/hard-skills.compon
 import { HardSkillsItemComponent } from './components/hard-skills-item/hard-skills-item.component';
 import { EducacionesComponent } from './components/educaciones/educaciones.component';
 import { EducacionesItemComponent } from './components/educaciones-item/educaciones-item.component';
+import { ProyectosComponent } from './components/proyectos/proyectos.component';
+import { ProyectosItemComponent } from './components/proyectos-item/proyectos-item.component';
 
 
 
@@ -45,7 +47,9 @@ const appRoutes: Routes = [
     HardSkillsComponent,
     HardSkillsItemComponent,
     EducacionesComponent,
-    EducacionesItemComponent
+    EducacionesItemComponent,
+    ProyectosComponent,
+    ProyectosItemComponent
   ],
   imports: [
     BrowserModule,
