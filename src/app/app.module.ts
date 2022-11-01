@@ -25,7 +25,7 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { ProyectosItemComponent } from './components/proyectos-item/proyectos-item.component';
 import { HardSoftSkillsComponent } from './components/hard-soft-skills/hard-soft-skills.component';
 
-
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 
 
@@ -68,7 +68,29 @@ const appRoutes: Routes = [
      con esto ya tenemos las rutas implementadas
 
     */
-   
+     NgCircleProgressModule.forRoot({
+      "radius": 60,
+      "space": -10,
+      "outerStrokeGradient": false,
+      "outerStrokeWidth": 10,
+      "outerStrokeColor": "#4882c2",
+      "outerStrokeGradientStopColor": "#53a9ff",
+      "innerStrokeColor": "#e7e8ea",
+      "innerStrokeWidth": 10,
+      "subtitleColor": "black",
+      "subtitleFontSize": "20",
+     
+      "title": "TITLE",
+      "titleColor": "black",
+      "titleFontSize": "20",
+      "titleFontWeight" : "900",
+      "animateTitle": false,
+      "animationDuration": 10,
+      "showUnits": true,
+      "showBackground": false,
+      "clockwise": true,
+      "startFromZero": false,
+      "lazy": true}),
 
   ],
   /* debemos permitir el modulo HttpClientModule 

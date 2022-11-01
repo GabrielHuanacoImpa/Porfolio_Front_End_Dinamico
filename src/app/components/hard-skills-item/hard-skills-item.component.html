@@ -1,5 +1,7 @@
 
+
 <!-- Es nuestra tarjeta-->
+
 <div 
     class="hardSkill"
     [ngClass]="{ reminder: hardSkill.reminder }"
@@ -12,14 +14,26 @@
         
         <div class="col-md-9">
             <h5>
-                {{hardSkill.id}} <br>
-                {{hardSkill.habilidad}} <br>
-                {{hardSkill.nivel}} <br><br>
-
+                {{hardSkill.id}} 
             </h5>
-            <h6>
-
-            </h6>
+            <h5>
+                <circle-progress
+  
+                [percent]="hardSkill.nivel"
+                [title]="hardSkill.nivel.toString()"
+                [subtitle]="hardSkill.habilidad"
+                [titleColor]="'black'"
+                [radius]="100"
+                [outerStrokeWidth]="10"
+                [innerStrokeWidth]="10"
+                [outerStrokeColor]="'green'"
+                [innerStrokeColor]="'#e7e8ea'"
+                [animation]="true"
+                [animationDuration]="1000"
+              ></circle-progress>              	              	              	              	              	
+                	
+                	              	              	              
+            </h5>
 
 
         </div>
