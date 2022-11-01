@@ -26,6 +26,8 @@ import { ProyectosItemComponent } from './components/proyectos-item/proyectos-it
 import { HardSoftSkillsComponent } from './components/hard-soft-skills/hard-soft-skills.component';
 
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { SoftSkillsComponent } from './components/soft-skills/soft-skills.component';
+import { SoftSkillsItemComponent } from './components/soft-skills-item/soft-skills-item.component';
 
 
 
@@ -51,7 +53,9 @@ const appRoutes: Routes = [
     EducacionesItemComponent,
     ProyectosComponent,
     ProyectosItemComponent,
-    HardSoftSkillsComponent
+    HardSoftSkillsComponent,
+    SoftSkillsComponent,
+    SoftSkillsItemComponent
   ],
   imports: [
     BrowserModule,
