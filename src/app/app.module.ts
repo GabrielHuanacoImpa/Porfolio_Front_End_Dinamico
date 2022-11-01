@@ -28,6 +28,8 @@ import { HardSoftSkillsComponent } from './components/hard-soft-skills/hard-soft
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { SoftSkillsComponent } from './components/soft-skills/soft-skills.component';
 import { SoftSkillsItemComponent } from './components/soft-skills-item/soft-skills-item.component';
+import { IdiomasComponent } from './components/idiomas/idiomas.component';
+import { IdiomasItemComponent } from './components/idiomas-item/idiomas-item.component';
 
 
 
@@ -55,7 +57,9 @@ const appRoutes: Routes = [
     ProyectosItemComponent,
     HardSoftSkillsComponent,
     SoftSkillsComponent,
-    SoftSkillsItemComponent
+    SoftSkillsItemComponent,
+    IdiomasComponent,
+    IdiomasItemComponent
   ],
   imports: [
     BrowserModule,
